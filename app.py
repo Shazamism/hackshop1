@@ -1,14 +1,5 @@
 import streamlit as st
 import random
-import html
-background_css="""
-<style>
-body{ 
-   background-color:red
-}
-</style>
-"""
-st.markdown(background_css, unsafe_allow_html=True)
 def game():
     if "low" not in st.session_state:
         st.session_state.low = 1
@@ -40,12 +31,12 @@ st.title("Welcome to my Streamlit application!!!")
 st.subheader("from the creator<3")
 port=st.button("PORTFOLIO")
 if port:
-    st.html("<h3 style=""color:blue"">PORTFOLIO</h3>")
-    st.html("<p style=""color:blue;font-family:sans-serif;""><b>NAME:</b>Praneash shiva S.R<br><b>DEPT:</b>BE.CSE(CYS)<br><b>G-mail:</b>srpshiva2006@gmail.com<br><b>Github:</b>https://github.com/Shazamism</p>")
-    st.html("<h3 style=""color:blue"">TECHNICAL SKILLS</h3>")
-    st.html("<p style=""color:blue;font-family:sans-serif;""><b>Programming Languages:</b> C++, Python, HTML, CSS<br><b>Hardware & IoT:</b> Arduino, Raspberry Pi<br><b>Cybersecurity Concepts:</b> Blockchain, Networking</p>")
-    st.html("<h3 style=""color:blue"">PROJECTS</h3>")
-    st.html("<p style=""color:blue;font-family:sans-serif;""><b>1.IoT warehouse robots</b><br><b>Description:</b>Warehouse robots powered by Arduino and Raspberry Pi are an increasingly popular choice for automating small to medium-scale operations due to their affordability, versatility, and ease of programming. These platforms can be used to create mobile robots, robotic arms, or automated systems to improve warehouse efficiency.<br><b>Types of robots:</b><br>Line follower robot, obstacle avoiding robot, pit avoider robot, light follower robots.</p>")
+    st.html("<h3 >PORTFOLIO</h3>")
+    st.html("<p ><b>NAME:</b>Praneash shiva S.R<br><b>DEPT:</b>BE.CSE(CYS)<br><b>G-mail:</b>srpshiva2006@gmail.com<br><b>Github:</b>https://github.com/Shazamism</p>")
+    st.html("<h3>TECHNICAL SKILLS</h3>")
+    st.html("<p ><b>Programming Languages:</b> C++, Python, HTML, CSS<br><b>Hardware & IoT:</b> Arduino, Raspberry Pi<br><b>Cybersecurity Concepts:</b> Blockchain, Networking</p>")
+    st.html("<h3>PROJECTS</h3>")
+    st.html("<p ><b>1.IoT warehouse robots</b><br><b>Description:</b>Warehouse robots powered by Arduino and Raspberry Pi are an increasingly popular choice for automating small to medium-scale operations due to their affordability, versatility, and ease of programming. These platforms can be used to create mobile robots, robotic arms, or automated systems to improve warehouse efficiency.<br><b>Types of robots:</b><br>Line follower robot, obstacle avoiding robot, pit avoider robot, light follower robots.</p>")
 
 
 st.title("Welcome to Guessing game!!!")
